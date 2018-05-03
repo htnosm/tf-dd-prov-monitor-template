@@ -18,3 +18,31 @@ Templating Datadog Monitor using Terraform Datadog Provider
 
 ## Usage
 
+### 1) download
+
+```
+$ git clone https://github.com/htnosm/tf-dd-prov-monitor-template.git
+$ cd tf-dd-prov-monitor-template
+```
+
+### 2) edit datadog_key.auto.tfvars
+
+Input Your Datadog API Key & Application Key.
+
+### 3) terraform init
+
+```
+$ terraform init
+# Check the terraform plan command ends successfull.
+$ terraform plan
+```
+
+### 4) edit files
+
+Edit various files according to the purpose.
+
+- e.g.)
+  - Edit datadog_monitor.auto.tfvars to define a notification group
+  - Edit templates/message.tmpl to notification body template
+  - Edit templates/notify.tmpl to notification template
+  - Add * .tf and increase various definitions
