@@ -7,6 +7,20 @@ Templating Datadog Monitor using Terraform Datadog Provider
 - Write the Datadog Monitor message in "here document"
 - Manage notification in groups
 
+### Files
+
+```
+├── README.md
+├── datadog_key.auto.tfvars      # api keys
+├── datadog_monitor.auto.tfvars  # define notify group
+├── datadog_monitor.tf           # define provider
+├── datadog_monitor_template.tf  # define template
+├── monitor_ec2_sample.tf        # monitor sample
+└── templates
+    ├── message.tmpl             # message common part sample
+    └── notify.tmpl              # message notification part sample
+```
+
 ## Requirements
 
 - [Provider: Datadog \- Terraform by HashiCorp](https://www.terraform.io/docs/providers/datadog/index.html)
